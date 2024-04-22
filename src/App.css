@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  /* overflow: hidden; */
+}
+
+h1 {
+  text-align: center;
+}
+
+.brown {
+  color: #704e2e;
+}
+.gold {
+  color: #ffca3a;
+}
+.black {
+  color: #1d190c;
+}
+.khaki {
+  color: #79745c;
+}
+.white {
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.section {
+  padding: 2em;
+  min-height: 30em;
+}
+
+li {
+  list-style: none;
+}

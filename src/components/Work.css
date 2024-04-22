@@ -1,0 +1,6 @@
+.work-container {
+  background-color: #1d190c;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}

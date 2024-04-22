@@ -1,0 +1,24 @@
+.contact-container {
+  background-color: #704e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.contact-phone {
+  margin: 1em;
+}
+.contact-email {
+  margin: 1em;
+  text-decoration: none;
+}
+.contact-hq {
+  margin: 1em;
+}

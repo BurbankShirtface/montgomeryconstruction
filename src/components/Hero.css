@@ -1,0 +1,22 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40em;
+  background-color: #1d190c;
+  position: relative;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("../assets/HBone1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-logo {
+  margin: 2em auto;
+  max-width: 90%;
+}

@@ -1,0 +1,21 @@
+.hero-info-container {
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-list-item {
+  font-size: 1.5em;
+  margin: 1em 0.5em;
+  width: 10%;
+  text-align: center;
+}

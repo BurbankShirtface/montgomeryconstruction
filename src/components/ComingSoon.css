@@ -1,0 +1,21 @@
+.coming-container {
+  background-color: #704e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-title {
+  font-size: 1.8em;
+}
+
+@media (max-width: 650px) {
+  .coming-title {
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 450px) {
+  .coming-title {
+    font-size: 1.4em;
+  }
+}
