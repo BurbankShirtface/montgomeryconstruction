@@ -7,11 +7,13 @@
 
 .coming-title {
   font-size: 1.8em;
+  width: 70%;
 }
 
 @media (max-width: 650px) {
   .coming-title {
     font-size: 1.7em;
+    width: 90%;
   }
 }
 @media (max-width: 450px) {
