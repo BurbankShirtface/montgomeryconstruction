@@ -8,7 +8,9 @@ const Contact = () => {
   return (
     <div className="contact-container section">
       {/* <h1 className="contact-title bold gold">CONTACT US</h1> */}
-      <h3 className="contact-phone bold gold">(519) 441-0833</h3>
+      <a href="tel:5194410833" className="contact-phone bold gold">
+        (519) 441-0833
+      </a>
       <a
         className="contact-email bold gold"
         href="mailto:ryan@montgomeryconstruction.ca"
