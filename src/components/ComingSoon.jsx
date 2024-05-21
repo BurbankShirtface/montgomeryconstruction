@@ -11,8 +11,9 @@ const ComingSoon = () => {
         But, we are available and open for business.
         <br />
         <br />
-        We specialize in interior renovations and remodels but can help with all
-        of your projects or repairs, interior or exterior, big or small.
+        We specialize in bathroom and kitchen renovations and remodels but can
+        help with all of your projects or repairs, interior or exterior, big or
+        small.
         <br />
         <br />
         Contact us today!
