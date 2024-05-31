@@ -11,7 +11,6 @@ import Kitchen2 from "../assets/Maggie.jpg";
 import BuiltIn from "../assets/builtin.jpg";
 import Kitchen3 from "../assets/Rosebery.jpg";
 import Kitchen4 from "../assets/Rosebery1.jpg";
-import Kitchen5 from "../assets/kitchen.png";
 
 const Work = () => {
   return (
@@ -51,11 +50,6 @@ const Work = () => {
         <img
           className="work-img"
           src={Kitchen4}
-          alt="Freshly renovated kitchen"
-        />
-        <img
-          className="work-img"
-          src={Kitchen5}
           alt="Freshly renovated kitchen"
         />
         <img
