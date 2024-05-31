@@ -1,6 +1,36 @@
 .work-container {
-  background-color: #1d190c;
+  background-color: #79745c;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
+}
+
+.work-title {
+  margin: 0 auto 2em;
+}
+
+.work-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work-img {
+  height: 400px;
+  margin: 1em;
+  max-width: 95%;
+}
+
+@media (max-width: 599px) {
+  .work-img {
+    height: 300px;
+  }
+}
+@media (max-width: 460px) {
+  .work-img {
+    height: auto;
+    width: 95%;
+  }
 }

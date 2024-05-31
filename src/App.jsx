@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="main-container">
       <Hero />
-      <Coming />
-      {/* <HeroInfo /> */}
-      {/* <About /> */}
-      {/* <Work /> */}
+      {/* <Coming /> */}
+      <HeroInfo />
+      <About />
+      <Work />
       {/* <Promise /> */}
       <Contact />
       <Footer />

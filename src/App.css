@@ -45,3 +45,16 @@ h1 {
 li {
   list-style: none;
 }
+
+.divider {
+  height: 2px;
+  width: 80%;
+  margin: 1em auto;
+  background-color: #1d190c;
+}
+
+@media (max-width: 780px) {
+  .section {
+    padding: 0.4em;
+  }
+}

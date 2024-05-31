@@ -1,36 +1,111 @@
 .about-container {
-  background-color: #1d190c;
+  background-color: #79745c;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about-text-container {
-  width: 75%;
-  margin: 1em 5em;
-}
-
 .about-title {
-  margin: 2em 0;
+  margin: 1em 0;
   text-align: left;
 }
-
-.about-title-span {
-  font-size: 2em;
-  margin-left: 0.2em;
-}
-
-.about-text {
-  font-size: 1em;
-  line-height: 1.2em;
-  margin: 1em 0;
-  word-spacing: 0.1em;
+.about-subtitle {
+  text-align: center;
+  width: 80%;
+  margin: 1.5em;
+  font-size: 1.3em;
+  line-height: 1.3em;
   max-width: 1000px;
 }
 
+.about-img-container {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  max-width: 1400px;
+}
+
+.about-img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+  width: 40%;
+}
+
 .about-img {
-  width: 50%;
-  margin: 4em 0 4em 2em;
-  border-radius: 20px;
-  box-shadow: 2px 2px 8px rgba(46, 46, 46, 0.8);
+  height: 300px;
+  /* margin: 2em; */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about-img-text-container {
+  margin: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.about-card-text {
+  margin: 2em 1em;
+  line-height: 1.5em;
+}
+
+@media (max-width: 980px) {
+  .about-subtitle {
+    font-size: 1.1em;
+  }
+  .about-title {
+    font-size: 1.7em;
+  }
+  .about-card-text {
+    font-size: 1.1em;
+    margin: 2em 0.3em;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-img-card {
+    width: 49%;
+    margin: 2em 0.5em;
+  }
+  .about-img-text-container {
+    margin: 1.5em 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img-card {
+    width: 80%;
+  }
+  .about-img-text-container {
+    margin-bottom: 0;
+  }
+  .about-img {
+    height: 270px;
+  }
+}
+
+@media (max-width: 555px) {
+  .about-subtitle {
+    width: 90%;
+  }
+  .about-subtitle {
+    font-size: 1em;
+  }
+  .about-img-card {
+    width: 100%;
+    margin: 0.5em;
+  }
+  .about-card-text {
+    font-size: 1em;
+  }
+  .about-img {
+    height: 250px;
+  }
 }
