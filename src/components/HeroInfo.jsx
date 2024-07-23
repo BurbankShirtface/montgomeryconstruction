@@ -19,9 +19,15 @@ const HeroInfo = () => {
           understanding as we work to enhance your space.
           <br />
           <br />
-          Our process has been forged through years of experience in business
+          Whether you're looking for a bathroom or kitchen remodel, a new deck,
+          a finished basement, some painting or tiling, or just a trusted
+          handyman to take care of seasonal home maintenance, Montgomery
+          Construction can help you. We tackle all kinds of projects, big and
+          small.
+          <br />
+          {/* Our process has been forged through years of experience in business
           and construction, and it's always evolving to provide a better
-          experience to our customers. <br />
+          experience to our customers. <br /> */}
           <br />
           <span className="info-span">
             Give us a call today and let's get started.
