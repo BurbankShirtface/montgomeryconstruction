@@ -11,6 +11,14 @@ import Kitchen2 from "../assets/Maggie.jpg";
 import BuiltIn from "../assets/builtin.jpg";
 import Kitchen3 from "../assets/Rosebery.jpg";
 import Kitchen4 from "../assets/Rosebery1.jpg";
+import Third from "../assets/ThirdBeforeAfter.png";
+import Rad from "../assets/RadCover.png";
+import Duff from "../assets/DuffBeforeAfter1.png";
+import Shed from "../assets/NeilShed.png";
+import Renfrew from "../assets/Renfrew.png";
+import Tub from "../assets/NainaTub.png";
+import Naina from "../assets/NainaBeforeAfter.png";
+import Fairfax from "../assets/FairfaxBeforeAfter.png";
 
 const Work = () => {
   return (
@@ -56,6 +64,26 @@ const Work = () => {
           className="work-img"
           src={BuiltIn}
           alt="Built-in cabinets around a fireplace"
+        />
+        <img
+          className="work-img"
+          src={Third}
+          alt="Built-in cabinets around a fireplace"
+        />
+        <img className="work-img" src={Rad} alt="Custom built rad cover" />
+        <img
+          className="work-img"
+          src={Duff}
+          alt="Custom kitchen before and after"
+        />
+        <img className="work-img" src={Shed} alt="A brand new shed" />
+        <img className="work-img" src={Renfrew} alt="A brand new addition" />
+        <img className="work-img" src={Tub} alt="A brand new bathtub" />
+        <img className="work-img" src={Naina} alt="A brand new bathroom" />
+        <img
+          className="work-img"
+          src={Fairfax}
+          alt="A before and after of a freshly renovated kitchen"
         />
       </div>
     </div>
