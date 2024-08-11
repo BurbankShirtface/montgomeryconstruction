@@ -17,6 +17,13 @@
 
 .nav-links-container {
   margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-link {
+  margin: 2em;
 }
 
 .nav-link {
@@ -62,4 +69,13 @@
   background-color: #583e24;
   box-shadow: 0 5px #666;
   transform: translateY(2.5px);
+}
+
+@media (max-width: 372px) {
+  .nav-btn {
+    font-size: 1em;
+  }
+  .insta-link {
+    margin: 1.7em;
+  }
 }
