@@ -19,6 +19,8 @@ import Renfrew from "../assets/Renfrew.png";
 import Tub from "../assets/NainaTub.png";
 import Naina from "../assets/NainaBeforeAfter.png";
 import Fairfax from "../assets/FairfaxBeforeAfter.png";
+import Deck from "../assets/deck1.jpg";
+import Deck1 from "../assets/deck2.jpg";
 
 const Work = () => {
   return (
@@ -85,6 +87,8 @@ const Work = () => {
           src={Fairfax}
           alt="A before and after of a freshly renovated kitchen"
         />
+        <img className="work-img" src={Deck} alt="A new deck" />
+        <img className="work-img" src={Deck1} alt="A new deck" />
       </div>
     </div>
   );
