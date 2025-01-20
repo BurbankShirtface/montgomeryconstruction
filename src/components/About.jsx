@@ -3,7 +3,7 @@ import React from "react";
 import "./About.css";
 
 import Nate from "../assets/NateHeadshot.jpg";
-import Ryan from "../assets/ryanHeadshot.jpg";
+import Ryan from "../assets/headshotBrick2.jpg";
 
 const About = () => {
   return (
