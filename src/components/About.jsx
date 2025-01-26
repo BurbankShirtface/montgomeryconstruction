@@ -28,9 +28,14 @@ const About = () => {
               - Bathroom/Kitchen renovation specialist <br />
               - Project manager <br />
               <br />
-              Ryan has 5 years of experience in residential construction.
+              Ryan's extensive experience in residential and commercial
+              construction has made him an efficient, qualified professional
+              project manager and builder with specialized skills in bathrooms,
+              kitchens, basements, additions, and even full home renovations and
+              remodels.
+              {/* Ryan has 5 years of experience in residential construction.
               Specifically bathrooms, kitchens, basements, additions, and even
-              full home renovations and remodels.
+              full home renovations and remodels. */}
             </h3>
           </div>
         </div>
