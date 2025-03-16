@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 300px;
+  z-index: 100;
 }
 
 .nav-logo {
@@ -71,11 +72,43 @@
   transform: translateY(2.5px);
 }
 
+.sticky-contact {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+  padding: 0.4em 0.8em;
+  border-radius: 30px;
+  background-color: #704e2e;
+  border: 1.5px solid #ffca3a;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.sticky-contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.sticky-contact:hover {
+  background-color: #583e24;
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 372px) {
   .nav-btn {
     font-size: 1em;
   }
   .insta-link {
     margin: 1.7em;
+  }
+  .sticky-contact {
+    font-size: 0.8em;
+    padding: 0.3em 0.6em;
   }
 }

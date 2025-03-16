@@ -33,6 +33,15 @@ const Form = () => {
           placeholder="Email"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <input
+          className="input"
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+        />
+        <ValidationError prefix="Phone" field="phone" errors={state.errors} />
         <textarea
           className="contact-input-message input"
           id="message"

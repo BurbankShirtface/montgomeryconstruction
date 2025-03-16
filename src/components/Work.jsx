@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Work.css";
 
@@ -24,74 +24,57 @@ import Deck1 from "../assets/deck2.jpg";
 import BFreeman from "../assets/BFreeman.jpg";
 
 const Work = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: Bath1, alt: "Freshly renovated bathroom" },
+    { src: Bath2, alt: "Freshly renovated bathroom" },
+    { src: Bath3, alt: "Freshly renovated bathroom" },
+    { src: Bath4, alt: "Freshly renovated bathroom" },
+    { src: Bath, alt: "Freshly renovated bathroom" },
+    { src: Kitchen2, alt: "Freshly renovated kitchen" },
+    { src: Kitchen3, alt: "Freshly renovated kitchen" },
+    { src: Kitchen4, alt: "Freshly renovated kitchen" },
+    { src: BuiltIn, alt: "Built-in cabinets around a fireplace" },
+    { src: Third, alt: "Built-in cabinets around a fireplace" },
+    { src: Rad, alt: "Custom built rad cover" },
+    { src: Duff, alt: "Custom kitchen before and after" },
+    { src: Shed, alt: "A brand new shed" },
+    { src: Renfrew, alt: "A brand new addition" },
+    { src: Tub, alt: "A brand new bathtub" },
+    { src: Naina, alt: "A brand new bathroom" },
+    { src: Fairfax, alt: "A before and after of a freshly renovated kitchen" },
+    { src: Deck, alt: "A new deck" },
+    { src: Deck1, alt: "A new deck" },
+    { src: BFreeman, alt: "A bathroom remodel" },
+  ];
+
   return (
     <div className="work-container section">
+      <h1 className="work-title">Our Work</h1>
       <div className="work-img-container">
-        <img
-          className="work-img"
-          src={Bath1}
-          alt="Freshly renovated bathroom"
-        />
-        <img
-          className="work-img"
-          src={Bath2}
-          alt="Freshly renovated bathroom"
-        />
-        <img
-          className="work-img"
-          src={Bath3}
-          alt="Freshly renovated bathroom"
-        />
-        <img
-          className="work-img"
-          src={Bath4}
-          alt="Freshly renovated bathroom"
-        />
-        <img className="work-img" src={Bath} alt="Freshly renovated bathroom" />
-        <img
-          className="work-img"
-          src={Kitchen2}
-          alt="Freshly renovated kitchen"
-        />
-        <img
-          className="work-img"
-          src={Kitchen3}
-          alt="Freshly renovated kitchen"
-        />
-        <img
-          className="work-img"
-          src={Kitchen4}
-          alt="Freshly renovated kitchen"
-        />
-        <img
-          className="work-img"
-          src={BuiltIn}
-          alt="Built-in cabinets around a fireplace"
-        />
-        <img
-          className="work-img"
-          src={Third}
-          alt="Built-in cabinets around a fireplace"
-        />
-        <img className="work-img" src={Rad} alt="Custom built rad cover" />
-        <img
-          className="work-img"
-          src={Duff}
-          alt="Custom kitchen before and after"
-        />
-        <img className="work-img" src={Shed} alt="A brand new shed" />
-        <img className="work-img" src={Renfrew} alt="A brand new addition" />
-        <img className="work-img" src={Tub} alt="A brand new bathtub" />
-        <img className="work-img" src={Naina} alt="A brand new bathroom" />
-        <img
-          className="work-img"
-          src={Fairfax}
-          alt="A before and after of a freshly renovated kitchen"
-        />
-        <img className="work-img" src={Deck} alt="A new deck" />
-        <img className="work-img" src={Deck1} alt="A new deck" />
-        <img className="work-img" src={BFreeman} alt="A bathroom remodel" />
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className="work-img"
+            src={image.src}
+            alt={image.alt}
+            onClick={() => setSelectedImage(image)}
+          />
+        ))}
       </div>
+
+      {selectedImage && (
+        <div className="lightbox" onClick={() => setSelectedImage(null)}>
+          <button
+            className="lightbox-close"
+            onClick={() => setSelectedImage(null)}
+          >
+            ×
+          </button>
+          <img src={selectedImage.src} alt={selectedImage.alt} />
+        </div>
+      )}
     </div>
   );
 };

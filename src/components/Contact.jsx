@@ -7,19 +7,21 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <div className="contact-container section">
-      {/* <h1 className="contact-title bold gold">CONTACT US</h1> */}
-      <a href="tel:5194410833" className="contact-phone bold gold">
-        (519) 441-0833
-      </a>
-      <a
-        className="contact-email bold gold"
-        href="mailto:ryan@montgomeryconstruction.ca"
-      >
-        <h3>ryan@montgomeryconstruction.ca</h3>
-      </a>
-      <p className="contact-hq bold gold">
-        Serving Ottawa and the surrounding area
-      </p>
+      <h1 className="contact-title bold gold">Get In Touch</h1>
+      <div className="contact-info-container">
+        <a href="tel:5194410833" className="contact-phone bold gold">
+          (519) 441-0833
+        </a>
+        <a
+          className="contact-email bold gold"
+          href="mailto:ryan@montgomeryconstruction.ca"
+        >
+          <h3>ryan@montgomeryconstruction.ca</h3>
+        </a>
+        <p className="contact-hq bold gold">
+          Serving Ottawa and the surrounding area
+        </p>
+      </div>
       {/* <div className="social-icon-container">
         <a
           className="social-icon"

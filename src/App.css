@@ -4,42 +4,76 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-brown: #704e2e;
+  --color-gold: #ffca3a;
+  --color-black: #1d190c;
+  --color-khaki: #79745c;
+  --color-white: #fff;
+  --section-padding: 4rem 2rem;
+  --transition-standard: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  /* overflow: hidden; */
+  line-height: 1.6;
+  color: var(--color-white);
+  background-color: var(--color-khaki);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
 }
 
 h1 {
   text-align: center;
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-standard);
 }
 
 .brown {
-  color: #704e2e;
+  color: var(--color-brown);
 }
 .gold {
-  color: #ffca3a;
+  color: var(--color-gold);
 }
 .black {
-  color: #1d190c;
+  color: var(--color-black);
 }
 .khaki {
-  color: #79745c;
+  color: var(--color-khaki);
 }
 .white {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .section {
-  padding: 2em;
-  min-height: 30em;
+  padding: var(--section-padding);
+  min-height: 30rem;
+  width: 100%;
 }
 
 li {
@@ -49,12 +83,55 @@ li {
 .divider {
   height: 2px;
   width: 80%;
-  margin: 1em auto;
-  background-color: #1d190c;
+  margin: 2rem auto;
+  background-color: var(--color-black);
+  opacity: 0.2;
 }
 
-@media (max-width: 780px) {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
   .section {
-    padding: 0.4em;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 2.5rem 1rem;
+  }
+
+  .divider {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 2rem 0.8rem;
   }
 }

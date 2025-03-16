@@ -4,33 +4,143 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
 }
 
 .work-title {
-  margin: 0 auto 2em;
+  margin: 0 0 3rem;
+  font-size: 2.5rem;
+  position: relative;
+  color: #ffca3a;
+}
+
+.work-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ffca3a;
 }
 
 .work-img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  padding: 1rem;
 }
 
 .work-img {
+  width: 100%;
   height: 400px;
-  margin: 1em;
-  max-width: 95%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-@media (max-width: 599px) {
-  .work-img {
-    height: 300px;
+.work-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
-@media (max-width: 460px) {
+
+@media (max-width: 768px) {
+  .work-container {
+    padding: 3rem 1rem;
+  }
+
+  .work-title {
+    font-size: 2.2rem;
+    margin: 0 0 2rem;
+  }
+
+  .work-img-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox-close {
+    top: 10px;
+    right: 10px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-container {
+    padding: 2rem 0.5rem;
+  }
+
+  .work-title {
+    font-size: 2rem;
+  }
+
+  .work-img-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
   .work-img {
-    height: auto;
-    width: 95%;
+    height: 300px;
   }
 }

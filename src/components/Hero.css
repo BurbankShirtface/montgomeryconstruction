@@ -3,20 +3,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 40em;
+  min-height: 85vh;
   background-color: #79745c;
   position: relative;
   background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.9)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
     ),
     url("../assets/HBone1.png");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  padding: 2rem;
 }
 
 .hero-logo {
   margin: 2em auto;
   max-width: 90%;
+  width: auto;
+  height: auto;
+  animation: fadeInUp 1.2s ease-out;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    min-height: 70vh;
+    padding: 1rem;
+  }
+
+  .hero-logo {
+    margin: 1em auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    min-height: 60vh;
+  }
 }
