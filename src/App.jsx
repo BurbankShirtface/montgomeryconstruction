@@ -7,7 +7,7 @@ import Work from "./components/Work";
 import Promise from "./components/Promise";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Coming from "./components/ComingSoon";
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./App.css";
 
@@ -22,6 +22,7 @@ function App() {
       {/* <Promise /> */}
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }

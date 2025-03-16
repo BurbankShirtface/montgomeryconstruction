@@ -42,6 +42,8 @@
   .hero-container {
     min-height: 70vh;
     padding: 1rem;
+    background-attachment: scroll;
+    background-position: center 25%;
   }
 
   .hero-logo {
@@ -52,5 +54,7 @@
 @media (max-width: 480px) {
   .hero-container {
     min-height: 60vh;
+    background-size: 200%;
+    background-position: center 30%;
   }
 }
