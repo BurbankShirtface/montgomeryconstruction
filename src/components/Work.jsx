@@ -22,6 +22,8 @@ import Fairfax from "../assets/FairfaxBeforeAfter.png";
 import Deck from "../assets/deck1.jpg";
 import Deck1 from "../assets/deck2.jpg";
 import BFreeman from "../assets/BFreeman.jpg";
+import Jess from "../assets/Jess.jpg";
+import Jess2 from "../assets/Jess2.jpg";
 
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -29,6 +31,8 @@ const Work = () => {
   const images = [
     { src: Bath1, alt: "Freshly renovated bathroom" },
     { src: Bath2, alt: "Freshly renovated bathroom" },
+    { src: Jess, alt: "Freshly renovated bathroom" },
+    { src: Jess2, alt: "Freshly renovated bathroom" },
     { src: Bath3, alt: "Freshly renovated bathroom" },
     { src: Bath4, alt: "Freshly renovated bathroom" },
     { src: Bath, alt: "Freshly renovated bathroom" },
