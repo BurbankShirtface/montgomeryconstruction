@@ -25,14 +25,14 @@ const About = () => {
             <h2 className="about-card-title gold">Ryan Montgomery</h2>
             <h4 className="about-card-subtitle gold">Owner/Operator</h4>
             <h3 className="about-card-text gold">
-              - Bathroom/Kitchen renovation specialist <br />
-              - Project manager <br />
+              - Full-Scope Residential Renovation Expert <br />
+              - Project Manager, Quality Control Lead & Client Support <br />
               <br />
               Ryan's extensive experience in residential and commercial
-              construction has made him an efficient, qualified professional
-              project manager and builder with specialized skills in bathrooms,
-              kitchens, basements, additions, and even full home renovations and
-              remodels.
+              construction has made him a highly skilled project manager and
+              builder. He specializes in bathrooms, kitchens, basements,
+              additions, and full home renovations, as well as exterior projects
+              such as decks, porches, and sheds.
               {/* Ryan has 5 years of experience in residential construction.
               Specifically bathrooms, kitchens, basements, additions, and even
               full home renovations and remodels. */}
@@ -43,20 +43,37 @@ const About = () => {
           <img className="about-img" src={Nate} alt="Nate's headshot" />
           <div className="about-img-text-container">
             <h2 className="about-card-title gold">Nathan Montgomery</h2>
-            <h4 className="about-card-subtitle gold">Designer/Consultant</h4>
+            <h4 className="about-card-subtitle gold">Technical Advisor</h4>
             <h3 className="about-card-text gold">
               - Red seal carpenter <br />
-              - Building Code Identification Number (BCIN) <br />
-              - Architectural designer <br />
+              - Former Building Code Identification Number (BCIN) holder <br />
+              - 20+ Years of Industry Experience <br />
               <br />
               With over 20 years of construction experience, Nathan has worked
               in many types of construction including residential renovations,
-              new builds, commercial, and industrial construction.
+              new builds, commercial, and industrial construction. Although he
+              is not directly involved in day-to-day operations, Nathan remains
+              a trusted resource behind the scenes at Montgomery Construction.
             </h3>
           </div>
         </div>
       </div>
       <div className="divider"></div>
+      <div className="about-network-card">
+        <h2 className="about-network-title gold">
+          A Trusted Network of Skilled Professionals
+        </h2>
+        <p className="about-network-text gold">
+          Montgomery Construction works with a well-established network of
+          licensed trades, engineers, designers, and suppliers across the
+          region. This collaborative model ensures that every project is matched
+          with the right expertise—whether it's plumbing, electrical, custom
+          finishes, or structural work. With reliable scheduling, clear
+          communication, and a commitment to quality, clients can trust that
+          their renovation is in capable hands from start to finish—no matter
+          the scope or complexity.
+        </p>
+      </div>
     </div>
   );
 };

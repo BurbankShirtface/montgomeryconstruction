@@ -112,3 +112,21 @@
     padding: 0.3em 0.6em;
   }
 }
+
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 2.8em;
+    margin: 0.5em;
+  }
+  .nav-btn {
+    font-size: 1em;
+    padding: 0.3em 0.8em;
+    border-radius: 18px;
+  }
+  .nav-links-container {
+    margin: 0.5em;
+  }
+  .insta-link {
+    margin: 1em;
+  }
+}
