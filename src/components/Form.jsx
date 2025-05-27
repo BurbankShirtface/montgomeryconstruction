@@ -42,6 +42,13 @@ const Form = () => {
           pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
         />
         <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+        <input
+          className="input"
+          id="referral"
+          type="text"
+          name="referral"
+          placeholder="How did you hear about us?"
+        />
         <textarea
           className="contact-input-message input"
           id="message"
