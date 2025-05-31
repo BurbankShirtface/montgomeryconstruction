@@ -10,7 +10,13 @@ const Form = () => {
       <p className="submit-message gold">
         Thank you. Your request has been sent.
         <br />
-        <br /> We will be in touch soon.
+        <br />
+        We will be in touch within 24 hours, guaranteed! If you haven't heard
+        from us, please submit another message and ensure your contact
+        information is correct, or give us a call or text at (519) 441-0833.{" "}
+        <br />
+        <br />
+        Have a good day!
       </p>
     );
   }
