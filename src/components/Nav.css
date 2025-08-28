@@ -9,11 +9,23 @@
   align-items: center;
   min-width: 300px;
   z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.nav-container.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .nav-logo {
   height: 6em;
   margin: 1em;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
 }
 
 .nav-links-container {
@@ -21,18 +33,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .insta-link {
-  margin: 2em;
+  margin: 1em;
+  transition: transform 0.3s ease;
+}
+
+.insta-link:hover {
+  transform: scale(1.1);
+}
+
+.insta-link img {
+  height: 2em;
+  width: auto;
 }
 
 .nav-link {
   background: none;
   border: none;
-  font-size: 1.2em;
-  margin: 1em;
+  font-size: 1.1em;
+  margin: 0.5em;
   position: relative;
+  cursor: pointer;
+  color: #ffca3a;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffca3a;
+  background: rgba(255, 202, 58, 0.1);
 }
 
 .nav-link:after {
@@ -45,25 +79,28 @@
   width: 0;
   background-color: #ffca3a;
 }
+
 .nav-link:hover:after {
   width: 100%;
-}
-.nav-link:after:visited {
-  text-decoration: none;
-  width: 0;
 }
 
 .nav-btn {
   font-size: 1.2em;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border-radius: 30px;
   background-color: #704e2e;
   border: 1.5px solid #ffca3a;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffca3a;
+  display: inline-block;
 }
+
 .nav-btn:hover {
   background-color: #583e24;
-  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .nav-btn:active {
@@ -86,6 +123,10 @@
   transform: translateY(-20px);
   pointer-events: none;
   z-index: 1000;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffca3a;
+  display: inline-block;
 }
 
 .sticky-contact.visible {
@@ -96,37 +137,103 @@
 
 .sticky-contact:hover {
   background-color: #583e24;
-  cursor: pointer;
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 372px) {
+@media (max-width: 1024px) {
+  .nav-links-container {
+    gap: 5px;
+  }
+  
+  .nav-link {
+    font-size: 1em;
+    margin: 0.3em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    height: 6em;
+  }
+  
+  .nav-logo {
+    height: 4em;
+    margin: 0.5em;
+  }
+  
+  .nav-links-container {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .nav-link {
+    font-size: 0.9em;
+    margin: 0.2em;
+    padding: 0.3em 0.6em;
+  }
+  
   .nav-btn {
     font-size: 1em;
-  }
-  .insta-link {
-    margin: 1.7em;
-  }
-  .sticky-contact {
-    font-size: 0.8em;
-    padding: 0.3em 0.6em;
+    padding: 0.4em 0.8em;
   }
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    height: 5em;
+  }
+  
   .nav-logo {
-    height: 2.8em;
-    margin: 0.5em;
+    height: 3em;
+    margin: 0.3em;
   }
-  .nav-btn {
-    font-size: 1em;
-    padding: 0.3em 0.8em;
-    border-radius: 18px;
-  }
+  
   .nav-links-container {
+    margin: 0.3em;
+    gap: 3px;
+  }
+  
+  .nav-link {
+    font-size: 0.8em;
+    margin: 0.1em;
+    padding: 0.2em 0.5em;
+  }
+  
+  .nav-btn {
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    border-radius: 20px;
+  }
+  
+  .insta-link {
     margin: 0.5em;
   }
+  
+  .insta-link img {
+    height: 1.5em;
+  }
+  
+  .sticky-contact {
+    font-size: 0.8em;
+    padding: 0.3em 0.6em;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+}
+
+@media (max-width: 372px) {
+  .nav-btn {
+    font-size: 0.8em;
+  }
+  
   .insta-link {
-    margin: 1em;
+    margin: 0.3em;
+  }
+  
+  .sticky-contact {
+    font-size: 0.7em;
+    padding: 0.2em 0.5em;
   }
 }
