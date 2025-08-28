@@ -36,7 +36,7 @@ const Promise = () => {
   ];
 
   return (
-    <div className="promise-container section">
+    <div className="promise-container">
       <div className="promise-header">
         <h2 className="promise-title gold">Our Promise to You</h2>
         <p className="promise-subtitle">

@@ -9,7 +9,6 @@ import Promise from "./components/Promise";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import ScrollReveal from "./components/ScrollReveal";
 
 import "./App.css";
 
@@ -18,41 +17,29 @@ function App() {
     <div className="main-container">
       <Hero />
       
-      <ScrollReveal>
-        <div id="hero-info" className="section">
-          <HeroInfo />
-        </div>
-      </ScrollReveal>
+      <div id="hero-info" className="section">
+        <HeroInfo />
+      </div>
       
-      <ScrollReveal>
-        <div id="about" className="section">
-          <About />
-        </div>
-      </ScrollReveal>
+      <div id="about" className="section">
+        <About />
+      </div>
       
-      <ScrollReveal>
-        <div id="testimonials" className="section">
-          <Testimonials />
-        </div>
-      </ScrollReveal>
+      <div id="testimonials" className="section">
+        <Testimonials />
+      </div>
       
-      <ScrollReveal>
-        <div id="projects" className="section">
-          <Projects />
-        </div>
-      </ScrollReveal>
+      <div id="projects" className="section">
+        <Projects />
+      </div>
       
-      <ScrollReveal>
-        <div id="promise" className="section">
-          <Promise />
-        </div>
-      </ScrollReveal>
+      <div id="promise" className="section">
+        <Promise />
+      </div>
       
-      <ScrollReveal>
-        <div id="contact" className="section">
-          <Contact />
-        </div>
-      </ScrollReveal>
+      <div id="contact" className="section">
+        <Contact />
+      </div>
       
       <Footer />
       <ScrollToTop />

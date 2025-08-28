@@ -7,12 +7,13 @@ const ScrollReveal = ({ children, className = "", threshold = 0.1 }) => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("revealed");
+          // Add the revealed class to trigger animations
+          entry.target.classList.add('revealed');
         }
       },
       {
         threshold,
-        rootMargin: "0px 0px -50px 0px",
+        rootMargin: '0px 0px -50px 0px'
       }
     );
 
@@ -34,4 +35,4 @@ const ScrollReveal = ({ children, className = "", threshold = 0.1 }) => {
   );
 };
 
-export default ScrollReveal;
+export default ScrollReveal;

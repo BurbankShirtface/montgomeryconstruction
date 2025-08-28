@@ -35,7 +35,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonials-container section">
+    <div className="testimonials-container">
       <div className="testimonials-header">
         <h2 className="testimonials-title gold">What Our Clients Say</h2>
         <p className="testimonials-subtitle">

@@ -22,7 +22,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className={`nav-container ${isScrolled ? 'scrolled' : ''}`}>
+      <div className={`nav-container ${isScrolled ? "scrolled" : ""}`}>
         <img
           className="nav-logo"
           src={NavLogo}
@@ -56,7 +56,7 @@ const Nav = () => {
           >
             Our Promise
           </Link>
-          
+
           <a
             className="insta-link"
             href="https://www.instagram.com/montgomeryconstructionottawa/"

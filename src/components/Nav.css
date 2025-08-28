@@ -145,7 +145,7 @@
   .nav-links-container {
     gap: 5px;
   }
-  
+
   .nav-link {
     font-size: 1em;
     margin: 0.3em;
@@ -157,23 +157,23 @@
   .nav-container {
     height: 6em;
   }
-  
+
   .nav-logo {
     height: 4em;
     margin: 0.5em;
   }
-  
+
   .nav-links-container {
     flex-wrap: wrap;
     gap: 5px;
   }
-  
+
   .nav-link {
     font-size: 0.9em;
     margin: 0.2em;
     padding: 0.3em 0.6em;
   }
-  
+
   .nav-btn {
     font-size: 1em;
     padding: 0.4em 0.8em;
@@ -184,37 +184,37 @@
   .nav-container {
     height: 5em;
   }
-  
+
   .nav-logo {
     height: 3em;
     margin: 0.3em;
   }
-  
+
   .nav-links-container {
     margin: 0.3em;
     gap: 3px;
   }
-  
+
   .nav-link {
     font-size: 0.8em;
     margin: 0.1em;
     padding: 0.2em 0.5em;
   }
-  
+
   .nav-btn {
     font-size: 0.9em;
     padding: 0.3em 0.6em;
     border-radius: 20px;
   }
-  
+
   .insta-link {
     margin: 0.5em;
   }
-  
+
   .insta-link img {
     height: 1.5em;
   }
-  
+
   .sticky-contact {
     font-size: 0.8em;
     padding: 0.3em 0.6em;
@@ -227,11 +227,11 @@
   .nav-btn {
     font-size: 0.8em;
   }
-  
+
   .insta-link {
     margin: 0.3em;
   }
-  
+
   .sticky-contact {
     font-size: 0.7em;
     padding: 0.2em 0.5em;
