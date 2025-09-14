@@ -10,6 +10,14 @@
   --color-black: #1d190c;
   --color-khaki: #79745c;
   --color-white: #fff;
+
+  /* Component-specific variables */
+  --gold: #ffca3a;
+  --gold-light: #ffd55a;
+  --dark-brown: #1d190c;
+  --brown: #704e2e;
+  --light-text: #e9ecef;
+
   --section-padding: 4rem 2rem;
   --transition-standard: all 0.3s ease;
   --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);

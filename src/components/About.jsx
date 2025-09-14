@@ -7,7 +7,7 @@ import Ryan from "../assets/headshotBrick2.jpg";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div id="about-container" className="about-container">
       <h1 className="about-title gold">Who We Are</h1>
       <h3 className="about-subtitle gold">
         Montgomery Construction is a team of brothers who have found their

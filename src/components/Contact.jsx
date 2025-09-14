@@ -6,14 +6,15 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div id="contact-container" className="contact-container">
       <div className="contact-header">
         <h2 className="contact-title gold">Get In Touch</h2>
-        <p className="contact-subtitle">
-          Ready to start your project? Let's discuss how we can bring your vision to life.
-        </p>
+        {/* <p className="contact-subtitle">
+          Ready to start your project? Let's discuss how we can bring your
+          vision to life.
+        </p> */}
       </div>
-      
+
       <div className="contact-content">
         <div className="contact-info-section">
           <div className="contact-info-card">
@@ -22,11 +23,11 @@ const Contact = () => {
             <a href="tel:5194410833" className="contact-phone gold">
               (519) 441-0833
             </a>
-            <p className="contact-info-description">
+            {/* <p className="contact-info-description">
               Available for consultations and emergency calls
-            </p>
+            </p> */}
           </div>
-          
+
           <div className="contact-info-card">
             <div className="contact-icon">✉️</div>
             <h3 className="contact-info-title">Email Us</h3>
@@ -36,11 +37,11 @@ const Contact = () => {
             >
               ryan@montgomeryconstruction.ca
             </a>
-            <p className="contact-info-description">
+            {/* <p className="contact-info-description">
               Send us project details and photos
-            </p>
+            </p> */}
           </div>
-          
+
           <div className="contact-info-card">
             <div className="contact-icon">📍</div>
             <h3 className="contact-info-title">Service Area</h3>
@@ -52,7 +53,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        
+
         <div className="contact-form-section">
           <Form />
         </div>

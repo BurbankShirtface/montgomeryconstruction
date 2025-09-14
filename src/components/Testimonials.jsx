@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Testimonials.css";
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const mobile = window.innerWidth <= 1024;
+      setIsMobile(mobile);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const testimonials = [
     {
       author: "Monique",
@@ -30,37 +45,91 @@ const Testimonials = () => {
     },
   ];
 
+  const nextTestimonial = () => {
+    if (isMobile) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex >= testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    } else {
+      setCurrentIndex((prevIndex) =>
+        prevIndex >= testimonials.length - 3 ? 0 : prevIndex + 1
+      );
+    }
+  };
+
+  const prevTestimonial = () => {
+    if (isMobile) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+      );
+    } else {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? testimonials.length - 3 : prevIndex - 1
+      );
+    }
+  };
+
   const renderStars = (rating) => {
     return "★".repeat(rating);
   };
+
+  // Calculate transform value correctly for mobile and desktop
+  const transformValue = isMobile ? currentIndex * 20 : currentIndex * 20;
 
   return (
     <div className="testimonials-container">
       <div className="testimonials-header">
         <h2 className="testimonials-title gold">What Our Clients Say</h2>
-        <p className="testimonials-subtitle">
+        {/* <p className="testimonials-subtitle">
           Don't just take our word for it - hear from our satisfied customers
-        </p>
+        </p> */}
       </div>
 
-      <div className="testimonials-grid">
-        {testimonials.map((testimonial, index) => (
-          <div className="testimonial-card" key={index}>
-            <div className="testimonial-stars">
-              {renderStars(testimonial.rating)}
-            </div>
-            <p className="testimonial-text">"{testimonial.text}"</p>
-            <div className="testimonial-author">
-              <span className="author-name">– {testimonial.author}</span>
-            </div>
+      <div className="testimonials-carousel">
+        <button
+          className="carousel-btn carousel-btn-left"
+          onClick={prevTestimonial}
+        >
+          ‹
+        </button>
+
+        <div className="testimonials-viewport">
+          <div
+            className="testimonials-track"
+            style={{
+              transform: `translateX(-${transformValue}%)`,
+            }}
+          >
+            {testimonials.map((testimonial, index) => (
+              <div className="testimonial-card" key={index}>
+                <div className="testimonial-stars">
+                  {renderStars(testimonial.rating)}
+                </div>
+                <p className="testimonial-text">"{testimonial.text}"</p>
+                <div className="testimonial-author">
+                  <span className="author-name">– {testimonial.author}</span>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        <button
+          className="carousel-btn carousel-btn-right"
+          onClick={nextTestimonial}
+        >
+          ›
+        </button>
       </div>
 
       <div className="testimonials-cta">
-        <p className="cta-text">Ready to join our satisfied customers?</p>
-        <a href="#contact" className="cta-button">
-          Get Your Free Quote
+        <a
+          href="https://share.google/M4Rt8gOwYirEoUrX3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-button"
+        >
+          Check out our Google Profile for more reviews
         </a>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import "./HeroInfo.css";
 
@@ -25,9 +26,14 @@ const HeroInfo = () => {
             projects, big and small.
             <br />
             <br />
-            <span className="info-span">
-              Give us a call today and let's get started.
-            </span>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="hero-cta-button"
+            >
+              Contact us today and let's get started
+            </Link>
           </p>
         </div>
         <div className="hero-info-image-section">
