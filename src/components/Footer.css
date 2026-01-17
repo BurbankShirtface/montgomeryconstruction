@@ -87,6 +87,22 @@
   font-size: 0.9rem;
 }
 
+.footer-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-partner-badge {
+  max-width: 200px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.footer-partner-badge:hover {
+  opacity: 0.8;
+}
+
 .footer-credit-link {
   color: #d4af37;
   text-decoration: none;
@@ -135,7 +151,11 @@
   .footer-bottom {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    gap: 20px;
+  }
+
+  .footer-badge {
+    order: -1;
   }
 
   .scroll-to-top {

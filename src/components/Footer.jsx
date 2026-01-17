@@ -59,6 +59,19 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>© Montgomery Construction 2024</p>
         </div>
+        <div className="footer-badge">
+          <a
+            href="https://justynrookcontracting.com/directory/listing/montgomery-construction"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://justynrookcontracting.com/images/ocn-partner-badge-light.png"
+              alt="Ottawa Construction Network Partner"
+              className="footer-partner-badge"
+            />
+          </a>
+        </div>
         <div className="footer-credit">
           <p>
             Website by{" "}
