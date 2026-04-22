@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import "./OurWork.css";
@@ -30,6 +29,13 @@ import AfterMorgan from "../assets/2025/afterMorgan.jpg";
 import AfterRoodi1 from "../assets/2025/afterRoodi1.jpg";
 import AfterJess from "../assets/2025/afterJess.jpg";
 import AfterEmma from "../assets/2025/afterEmma.jpg";
+
+// 2026 project photos
+import Photo2026_171556 from "../assets/2026/Screenshot 2026-04-22 171556.png";
+import Photo2026_171744 from "../assets/2026/Screenshot 2026-04-22 171744.png";
+import Photo2026_173105 from "../assets/2026/Screenshot 2026-04-22 173105.png";
+import Photo2026_173115 from "../assets/2026/Screenshot 2026-04-22 173115.png";
+import Photo2026_Untitled from "../assets/2026/Untitled.png";
 
 const OurWork = () => {
   // Scroll to top when component mounts
@@ -66,6 +72,13 @@ const OurWork = () => {
     { src: AfterFence, alt: "Fence Project" },
     { src: AfterMorgan, alt: "Morgan Project" },
     // { src: AfterRoodi, alt: "Roodi Project" },
+
+    // 2026 projects
+    { src: Photo2026_171556, alt: "Renovation project 2026" },
+    { src: Photo2026_171744, alt: "Renovation project 2026" },
+    { src: Photo2026_173105, alt: "Renovation project 2026" },
+    { src: Photo2026_173115, alt: "Renovation project 2026" },
+    { src: Photo2026_Untitled, alt: "Renovation project 2026" },
   ];
 
   return (
