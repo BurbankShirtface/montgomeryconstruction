@@ -95,7 +95,7 @@ const OurWork = () => {
       {/* All Projects Section */}
       <div className="projects-section">
         <h2 className="section-title">Our Work</h2>
-        <div className="projects-grid">
+        <div className="projects-gallery">
           {allProjects.map((project, index) => (
             <div key={index} className="project-image-container">
               <img

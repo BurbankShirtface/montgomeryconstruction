@@ -46,27 +46,49 @@
   font-weight: 600;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+/*
+ * Row wrap, not a fixed column grid: each item is as wide as its image (capped to the
+ * section). A wide/panoramic image won’t sit in a narrow “cell” — if it doesn’t fit
+ * beside the previous items, it breaks to a new line and can use the full row width
+ * (so the photo stays big enough to read). Each row can have 1, 2, 3+ images.
+ */
+.projects-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem 1.25rem;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .project-image-container {
   position: relative;
+  flex: 0 0 auto; /* do not grow/shrink: keeps aspect ratio, drives wrap when a row is full */
+  display: block;
+  width: max-content;
+  /* Cap display size on large viewports; still min(100%, …) for phones */
+  max-width: min(100%, 780px);
+  min-width: 0;
+  line-height: 0; /* remove stray gap below img */
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  /* Light edge only; background no longer fills a wide box beside narrow photos */
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .project-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+  /* Capped to gallery width: wide shots use the full row when they’re alone on a line */
+  max-width: 100%;
+  width: auto;
+  height: auto;
   display: block;
 }
 
@@ -186,13 +208,8 @@
     margin-bottom: 50px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .project-image {
-    height: 220px;
+  .projects-gallery {
+    gap: 1.25rem 1rem;
   }
 
   .instagram-link {
@@ -244,12 +261,8 @@
     margin-bottom: 25px;
   }
 
-  .projects-grid {
-    gap: 12px;
-  }
-
-  .project-image {
-    height: 180px;
+  .projects-gallery {
+    gap: 1rem;
   }
 
   .instagram-link {
