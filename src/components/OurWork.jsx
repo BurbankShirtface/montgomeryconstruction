@@ -95,6 +95,24 @@ const OurWork = () => {
       {/* All Projects Section */}
       <div className="projects-section">
         <h2 className="section-title">Our Work</h2>
+        <div className="featured-video-section">
+          <div className="featured-video-copy">
+            <span className="featured-video-label">Recent Project</span>
+            <h3 className="featured-video-title">Watch a Recent Renovation</h3>
+            <p className="featured-video-text">
+              Take a closer look at the craftsmanship, finishes, and details
+              that go into a Montgomery Construction project.
+            </p>
+          </div>
+          <div className="featured-video-frame">
+            <iframe
+              src="https://player.vimeo.com/video/1203555366?byline=0&title=0&owner=0&name=0&logos=0&profile=0&profilepicture=0&vimeologo=0&portrait=0"
+              title="Recent Montgomery Construction project video"
+              allow="autoplay; fullscreen"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
         <div className="projects-gallery">
           {allProjects.map((project, index) => (
             <div key={index} className="project-image-container">

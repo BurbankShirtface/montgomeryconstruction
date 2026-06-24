@@ -31,6 +31,9 @@ const Projects = () => {
       </div>
 
       <div className="view-more-section">
+        <p className="recent-project-callout">
+          New project video now featured in our gallery.
+        </p>
         <Link to="/our-work" className="view-more-button">
           Project Gallery
         </Link>

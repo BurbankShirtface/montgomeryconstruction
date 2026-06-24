@@ -67,10 +67,10 @@ const About = () => {
           Montgomery Construction works with a well-established network of
           licensed trades, engineers, designers, and suppliers across the
           region. This collaborative model ensures that every project is matched
-          with the right expertise—whether it's plumbing, electrical, custom
+          with the right expertise, whether it's plumbing, electrical, custom
           finishes, or structural work. With reliable scheduling, clear
           communication, and a commitment to quality, clients can trust that
-          their renovation is in capable hands from start to finish—no matter
+          their renovation is in capable hands from start to finish, no matter
           the scope or complexity.
         </p>
       </div>
