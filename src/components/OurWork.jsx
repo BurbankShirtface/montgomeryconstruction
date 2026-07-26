@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import PressFeature from "./PressFeature";
 import "./OurWork.css";
 
 // Import bathroom and kitchen images
@@ -36,6 +37,9 @@ import Photo2026_171744 from "../assets/2026/Screenshot 2026-04-22 171744.png";
 import Photo2026_173105 from "../assets/2026/Screenshot 2026-04-22 173105.png";
 import Photo2026_173115 from "../assets/2026/Screenshot 2026-04-22 173115.png";
 import Photo2026_Untitled from "../assets/2026/Untitled.png";
+import Yasmine1 from "../assets/Yasmine1.png";
+import Yasmine2 from "../assets/Yasmine2.png";
+import Yasmine3 from "../assets/Yasmine3.png";
 
 const OurWork = () => {
   // Scroll to top when component mounts
@@ -49,6 +53,9 @@ const OurWork = () => {
     { src: Bathroom1, alt: "Bathroom Renovation 1" },
     { src: Bathroom2, alt: "Bathroom Renovation 2" },
     { src: Bathroom3, alt: "Bathroom Renovation 3" },
+    { src: Yasmine1, alt: "Yasmine Project 1" },
+    { src: Yasmine2, alt: "Yasmine Project 2" },
+    { src: Yasmine3, alt: "Yasmine Project 3" },
     { src: Bathroom4, alt: "Bathroom Renovation 4" },
     { src: Bathroom5, alt: "Bathroom Renovation 5" },
     { src: Bathroom6, alt: "Bathroom Renovation 6" },
@@ -113,6 +120,7 @@ const OurWork = () => {
             ></iframe>
           </div>
         </div>
+        <PressFeature />
         <div className="projects-gallery">
           {allProjects.map((project, index) => (
             <div key={index} className="project-image-container">

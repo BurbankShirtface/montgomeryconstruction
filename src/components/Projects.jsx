@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PressFeature from "./PressFeature";
 import "./Projects.css";
 
 // Import the specific sample images
@@ -29,6 +30,8 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      <PressFeature />
 
       <div className="view-more-section">
         <p className="recent-project-callout">
